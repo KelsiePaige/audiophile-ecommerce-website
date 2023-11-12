@@ -27,6 +27,7 @@
     --color-hit-pink: #FBAF85;
     --color-black: #000000;
     --color-cod-gray: #101010;
+    --color-tundora: #4C4C4C;
     --color-white: #FFFFFF;
     --color-seashell: #F1F1F1;
     --color-alabaster: #FAFAFA;
@@ -83,7 +84,7 @@ h2,
 h3,
 h4,
 h5,
-h6, 
+h6,
 a {
     font-weight: 700;
     text-transform: uppercase;
@@ -113,16 +114,23 @@ a {
     color: var(--color-white);
 }
 
-.btn {
+.btn,
+.zx7-speaker .btn__two a,
+.yx1-earphones .btn__two a {
     width: 160px;
     height: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .btn.btn__one {
     background-color: var(--color-raw-sienna);
+}
+
+.btn.btn__one:hover {
+    background-color: var(--color-hit-pink);
 }
 
 .categories,
@@ -148,6 +156,30 @@ footer {
     align-items: center;
     margin: 32px 24px;
     width: 327px;
+}
+
+.icon-hamburger {
+    background-image: url("../assets/shared/tablet/icon-hamburger.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 15px;
+}
+
+.logo {
+    background-image: url("../assets/shared/desktop/logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 143px;
+    height: 25px;
+}
+
+.icon-cart {
+    background-image: url("../assets/shared/desktop/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 23px;
+    height: 20px;
 }
 
 .nav-divider {
@@ -205,9 +237,8 @@ footer {
 
 .content-wrapper {
     width: 327px;
-    /* width: 87.2% */
     height: auto;
-    
+
 }
 
 .categories .content-wrapper {
@@ -218,6 +249,7 @@ footer {
     width: 327px;
     height: 217px;
     margin-bottom: 16px;
+    cursor: pointer;
 }
 
 .box {
@@ -274,6 +306,11 @@ footer {
     letter-spacing: 1px;
 }
 
+.shop:hover {
+    color: var(--color-raw-sienna);
+    opacity: 1;
+}
+
 /***************************************** 
             PRODUCT SECTION                 
 *****************************************/
@@ -310,9 +347,13 @@ h2 {
     margin: 0 auto 24px;
 }
 
-.btn__two--fill {
+.btn__two {
     margin: 0 auto;
     background-color: var(--color-black);
+}
+
+.btn__two:hover {
+    background-color: var(--color-tundora);
 }
 
 .zx7-speaker {
@@ -327,16 +368,30 @@ h2 {
 }
 
 .zx7-speaker h4 {
-    padding: 101px 0  32px 24px;
+    padding: 101px 0 32px 24px;
 }
 
-.btn__two--default {
+.zx7-speaker .btn__two,
+.yx1-earphones .btn__two {
     border: 1px solid var(--color-black);
+    background-color: transparent;
     margin-left: 24px;
 }
 
-.btn__two--default a {
+.zx7-speaker .btn__two:hover,
+.yx1-earphones .btn__two:hover {
+    border: none;
+    background-color: var(--color-black);
+}
+
+.zx7-speaker .btn__two a,
+.yx1-earphones .btn__two a {
     color: var(--color-black);
+}
+
+.zx7-speaker .btn__two a:hover,
+.yx1-earphones .btn__two a:hover {
+    color: var(--color-white);
 }
 
 .yx1-earphones {
@@ -412,8 +467,8 @@ footer {
     margin: 0 auto;
 }
 
-footer img {
-    padding: 48px 116px 40px;
+footer .logo {
+    margin: 48px auto 40px;
 }
 
 .footer-menu {
@@ -431,7 +486,9 @@ footer ul li {
     padding: 8px 0;
 }
 
-/* footer ul li a {} */
+footer ul li a:hover {
+    color: var(--color-raw-sienna);
+}
 
 footer p {
     color: var(--color-white);
@@ -461,12 +518,31 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 8px;
 }
 
-.social-links img {
-    padding: 0 8px;
-    margin: 0;
+.icon {
+    width: 24px;
+    height: 24px;
 }
 
+.icon-facebook {
+    background-image: url("../assets/shared/desktop/icon-facebook.svg");
+    background-repeat: no-repeat;
+}
 
+.icon-twitter {
+    background-image: url("../assets/shared/desktop/icon-twitter.svg");
+    background-repeat: no-repeat;
+}
 
+.icon-instagram {
+    background-image: url("../assets/shared/desktop/icon-instagram.svg");
+    background-repeat: no-repeat;
+}
+
+.icon-facebook:hover,
+.icon-twitter:hover,
+.icon-instagram:hover {
+    filter: brightness(0) saturate(100%) invert(65%) sepia(32%) saturate(1438%) hue-rotate(327deg) brightness(91%) contrast(85%);
+}
