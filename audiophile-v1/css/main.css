@@ -134,7 +134,7 @@ a {
 }
 
 .categories,
-.products,
+.feature-items,
 .about,
 footer {
     position: relative;
@@ -311,11 +311,19 @@ footer {
     opacity: 1;
 }
 
+.icon-arrow-right {
+    width: 10px;
+    height: 15px;
+    background-image: url("../assets/shared/desktop/icon-arrow-right.svg");
+    background-repeat: no-repeat;
+    margin-top: 2px;
+}
+
 /***************************************** 
-            PRODUCT SECTION                 
+            FEATURE ITEMS SECTION                 
 *****************************************/
 
-.products .content-wrapper {
+.feature-items .content-wrapper {
     margin: 0 24px 120px;
 }
 
@@ -545,4 +553,44 @@ footer p {
 .icon-twitter:hover,
 .icon-instagram:hover {
     filter: brightness(0) saturate(100%) invert(65%) sepia(32%) saturate(1438%) hue-rotate(327deg) brightness(91%) contrast(85%);
+}
+
+/* ************************************************************************ 
+    HEADPHONES SUBPAGE STYLES
+ ************************************************************************ */
+
+ .mask {
+    background-color: var(--color-black);
+}
+
+.header {
+    position: absolute;
+    top: 90px;
+    height: 102px;
+    width: 100%;
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h4 {
+    color: var(--color-white);
+}
+
+/***************************************** 
+              PRODUCTS SECTION                 
+*****************************************/
+
+
+
+.product-preview img {
+    width: 327px;
+    height: 352px;
+    border-radius: var(--br-5xs);
+}
+
+.product-content p {
+    color: var(--color-black);
+    opacity: .5;
 }
