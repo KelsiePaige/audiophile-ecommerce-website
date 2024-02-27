@@ -9,6 +9,10 @@ footer {
     top: 192px;
 }
 
+.nav-divider {
+    background-color: black;
+}
+
 .mask {
     background-color: var(--color-black);
 }
@@ -27,6 +31,8 @@ footer {
 .page-title h4 {
     color: var(--color-white);
 }
+
+
 
 /***************************************** 
             PRODUCTS SECTION                 
