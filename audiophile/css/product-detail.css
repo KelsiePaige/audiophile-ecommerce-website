@@ -1,0 +1,128 @@
+:root {
+    /* FONT */
+    --font-manrope: Manrope;
+
+    /* FONT SIZES */
+    --fs-h1: 56px;
+    /* H1 - Manrope Bold - 56px (All Caps, 58px Line Space, 2px Char. Space) */
+    --fs-h2: 40px;
+    /* H2 - Manrope Bold - 40px (All Caps, 44px Line Space, 1.5px Char. Space) */
+    --fs-h3: 32px;
+    /* H3 - Manrope Bold - 32px (All Caps, 36px Line Space, 1.15px Char. Space) */
+    --fs-h4: 28px;
+    /* H4 - Manrope Bold - 28px (All Caps, 38px Line Space, 2px Char. Space) */
+    --fs-h5: 24px;
+    /* H5 - Manrope Bold - 24px (All Caps, 33px Line Space, 1.7px Char. Space) */
+    --fs-h6: 18px;
+    /* H6 - Manrope Bold - 18px (All Caps, 24px Line Space, 1.3px Char. Space) */
+    --fs-body: 15px;
+    /* Body - Manrope Medium - 15px (25px Line Space) */
+    --fs-overline: 14px;
+    /* Overline - Manrope Regular - 14px (All Caps, 19px Line Space, 10px Char. Space) */
+    --fs-sub-title: 13px;
+    /* Sub Title - Manrope Bold - 13px (All Caps, 25px Line Space, 1px Char. Space) */
+
+    /* COLORS */
+    --color-raw-sienna: #D87D4A;
+    --color-hit-pink: #FBAF85;
+    --color-black: #000000;
+    --color-cod-gray: #101010;
+    --color-tundora: #4C4C4C;
+    --color-white: #FFFFFF;
+    --color-seashell: #F1F1F1;
+    --color-alabaster: #FAFAFA;
+
+    /* BORDER RADIUS */
+    --br-5xs: 8px;
+}
+
+.go-back a {
+    color: var(--color-black);
+    opacity: 0.5;
+    position: absolute;
+    top: 106px;
+    left: 24px;
+    line-height: 2.5;
+    text-transform: none;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: normal;
+    border: 1px solid;
+}
+
+.product {
+    position: relative;
+    top: 146px;
+    border: 1px solid red;
+}
+
+.product .content-wrapper {
+    border: 1px solid green;
+    margin-top: 24px;
+}
+
+.product-container {}
+
+p.overline {
+    font-size: var(--fs-overline);
+    text-transform: uppercase;
+    line-height: 24px;
+    letter-spacing: 10px;
+    padding-left: 0;
+}
+
+p.overline.orange {
+    color: var(--color-raw-sienna);
+    opacity: 1;
+}
+
+.buttons {
+    display: flex;
+}
+
+.btn__counter {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+    padding: 15px;
+    background-color: var(--color-seashell);
+    margin-right: 16px;
+}
+
+.minus,
+.num,
+.plus {
+    font-family: var(--fs-sub-title);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.minus, 
+.plus {
+    opacity: .25;
+    cursor: pointer;
+}
+
+.btn__cart {
+    width: 160px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-raw-sienna);
+    font-size: var(--fs-sub-title);
+    text-transform: uppercase;
+    line-height: 25px;
+    letter-spacing: 1px;
+    color: var(--color-white);
+    font-weight: 700;
+}
+
+.buttons .btn {
+    cursor: default;
+}
+
+.buttons .btn__cart {
+    cursor: pointer;
+}
+
