@@ -36,6 +36,16 @@
     --br-5xs: 8px;
 }
 
+.content-wrapper {
+    margin: 0 24px;
+}
+
+.features h5,
+.in-the-box h5,
+.more-options h5 {
+    margin-bottom: 40px;
+}
+
 .go-back a {
     color: var(--color-black);
     opacity: 0.5;
@@ -47,21 +57,29 @@
     font-size: 15px;
     font-weight: 500;
     letter-spacing: normal;
-    border: 1px solid;
 }
 
 .product {
     position: relative;
     top: 146px;
-    border: 1px solid red;
+    margin-bottom: 120px;
 }
 
 .product .content-wrapper {
-    border: 1px solid green;
     margin-top: 24px;
 }
 
-.product-container {}
+.product-container {
+    margin: 0;
+}
+
+.product-content p {
+    text-align: left;
+}
+
+.product-content h4 {
+    text-align: left;
+}
 
 p.overline {
     font-size: var(--fs-overline);
@@ -74,6 +92,10 @@ p.overline {
 p.overline.orange {
     color: var(--color-raw-sienna);
     opacity: 1;
+}
+
+h6 {
+    margin-bottom: 30px;
 }
 
 .buttons {
@@ -92,14 +114,13 @@ p.overline.orange {
 .minus,
 .num,
 .plus {
-    font-family: var(--fs-sub-title);
-    font-size: 13px;
+    font-size: var(--fs-sub-title);
     font-weight: 700;
 }
 
 .minus, 
 .plus {
-    opacity: .25;
+    opacity: 0.25;
     cursor: pointer;
 }
 
@@ -126,3 +147,102 @@ p.overline.orange {
     cursor: pointer;
 }
 
+.features {
+    position: relative;
+    top: 146px;
+    margin-bottom: 120px;
+}
+
+.features p {
+    color: var(--color-black);
+    opacity: 0.5;
+    line-height: 25px;
+}
+
+.in-the-box {
+    position: relative;
+    top: 146px;
+    margin-bottom: 88px;
+}
+
+.in-the-box ul li  {
+    display: flex;
+    align-items: center;
+}
+
+.in-the-box .content-wrapper ul li:nth-child(2) span {
+    margin-right: -2.36px;
+}
+
+.in-the-box ul li p {
+    opacity: 0.5;
+    color: var(--color-black);
+    margin-left: 24px;
+}
+
+.in-the-box ul li span {
+    color: var(--color-raw-sienna);
+    font-weight: 700;
+    opacity: 1;
+    text-transform: none;
+    margin: 0;
+    padding: 0;
+    letter-spacing: normal;
+    font-size: var(--fs-body);
+}
+
+.gallery {
+    position: relative;
+    top: 146px;
+    margin-bottom: 120px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.images .img-1,
+.images .img-2 {
+    height: 174px;
+    margin-bottom: 20px;
+}
+
+.images .img-3 {
+    height: 368px;
+}
+
+.img-1 img,
+.img-2 img,
+.img-3 img {
+    width: 327px;
+    border-radius: 8px;
+}
+
+.more-options {
+    position: relative;
+    top: 146px;
+    margin-bottom: 24px;
+}
+
+.more-options h5 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.options-container img {
+    width: 327px;
+    border-radius: 8px;
+}
+
+.option {
+    margin-bottom: 56px;
+}
+
+.option h5 {
+    letter-spacing: 1.71px;
+    line-height: auto;
+    margin: 32px 0;
+}
