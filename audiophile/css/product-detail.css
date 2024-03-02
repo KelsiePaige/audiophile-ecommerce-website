@@ -218,7 +218,7 @@ p.overline.orange {
 .img-2 img,
 .img-3 img {
     width: 327px;
-    border-radius: 8px;
+    border-radius: var(--br-5xs);
 }
 
 .more-options {
@@ -234,7 +234,7 @@ p.overline.orange {
 
 .options-container img {
     width: 327px;
-    border-radius: 8px;
+    border-radius: var(--br-5xs);
 }
 
 .option {
