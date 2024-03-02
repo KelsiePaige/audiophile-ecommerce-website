@@ -2,21 +2,6 @@
     CATEGORY PAGE STYLES
  ************************************************************************ */
 
-/***************************************** 
-              PRODUCTS SECTION                 
-*****************************************/
-
-.product-preview img {
-    width: 327px;
-    height: 352px;
-    border-radius: var(--br-5xs);
-}
-
-.product-content p {
-    color: var(--color-black);
-    opacity: .5;
-}
-
 .products,
 .categories,
 .about,
