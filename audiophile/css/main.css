@@ -223,12 +223,12 @@ footer {
 }
 
 .overline {
-    opacity: .4964;
+    opacity: 0.4964;
     padding-left: 65px;
 }
 
 .hero-content p {
-    opacity: .75;
+    opacity: 0.75;
     text-align: center;
     margin-top: 24px;
 }
@@ -306,7 +306,7 @@ footer {
 
 .shop {
     color: var(--color-black);
-    opacity: .5;
+    opacity: 0.5;
     font-size: var(--fs-sub-title);
     font-weight: 700;
     letter-spacing: 1px;
@@ -355,7 +355,7 @@ h2 {
 }
 
 .feat-item__one p {
-    opacity: .75;
+    opacity: 0.75;
     text-align: center;
     width: 280px;
     margin: 0 auto 24px;
@@ -459,7 +459,7 @@ h2 {
 
 .about p {
     color: var(--color-black);
-    opacity: .5;
+    opacity: 0.5;
     text-align: center;
     padding-top: 32px;
 }
@@ -506,7 +506,7 @@ footer ul li a:hover {
 
 footer p {
     color: var(--color-white);
-    opacity: .5;
+    opacity: 0.5;
     text-align: center;
     margin: 0 24px;
     padding: 40px 0 48px;

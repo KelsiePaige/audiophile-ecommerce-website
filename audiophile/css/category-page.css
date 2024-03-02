@@ -86,7 +86,7 @@ p.overline.orange {
 
 .product-content p {
     color: var(--color-black);
-    opacity: .5;
+    opacity: 0.5;
     text-align: center;
     padding-bottom: 24px;
 }
