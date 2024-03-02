@@ -72,6 +72,12 @@ h4 {
     line-height: normal;
 }
 
+h5 {
+    font-size: var(--fs-h5);
+    line-height: 36px;
+    letter-spacing: 0.86px;
+}
+
 h6 {
     color: var(--color-black);
     font-size: var(--fs-body);
@@ -115,8 +121,8 @@ a {
 }
 
 .btn,
-.zx7-speaker .btn__two a,
-.yx1-earphones .btn__two a {
+.feat-item__two .btn__two a,
+.feat-item__three .btn__two a {
     width: 160px;
     height: 48px;
     display: flex;
@@ -327,7 +333,7 @@ footer {
     margin: 0 24px 120px;
 }
 
-.zx9-speaker {
+.feat-item__one {
     width: 327px;
     height: 600px;
     background-image: url("../assets/home/desktop/pattern-circles.svg");
@@ -338,7 +344,7 @@ footer {
     border-radius: var(--br-5xs);
 }
 
-.zx9-speaker img {
+.feat-item__one img {
     width: 164px;
     margin: 55px 81px 0;
 }
@@ -348,7 +354,7 @@ h2 {
     padding: 0 40px;
 }
 
-.zx9-speaker p {
+.feat-item__one p {
     opacity: .75;
     text-align: center;
     width: 280px;
@@ -364,7 +370,7 @@ h2 {
     background-color: var(--color-tundora);
 }
 
-.zx7-speaker {
+.feat-item__two {
     width: 327px;
     height: 320px;
     border-radius: var(--br-5xs);
@@ -375,45 +381,45 @@ h2 {
     margin: 24px 0;
 }
 
-.zx7-speaker h4 {
+.feat-item__two h4 {
     padding: 101px 0 32px 24px;
 }
 
-.zx7-speaker .btn__two,
-.yx1-earphones .btn__two {
+.feat-item__two .btn__two,
+.feat-item__three .btn__two {
     border: 1px solid var(--color-black);
     background-color: transparent;
     margin-left: 24px;
 }
 
-.zx7-speaker .btn__two:hover,
-.yx1-earphones .btn__two:hover {
+.feat-item__two .btn__two:hover,
+.feat-item__three .btn__two:hover {
     border: none;
     background-color: var(--color-black);
 }
 
-.zx7-speaker .btn__two a,
-.yx1-earphones .btn__two a {
+.feat-item__two .btn__two a,
+.feat-item__three .btn__two a {
     color: var(--color-black);
 }
 
-.zx7-speaker .btn__two a:hover,
-.yx1-earphones .btn__two a:hover {
+.feat-item__two .btn__two a:hover,
+.feat-item__three .btn__two a:hover {
     color: var(--color-white);
 }
 
-.yx1-earphones {
+.feat-item__three {
     height: 424px;
 }
 
-.yx1-earphones img {
+.feat-item__three img {
     width: 327px;
     height: 200px;
     border-radius: var(--br-5xs);
     margin-bottom: 24px;
 }
 
-.text-box {
+.title-box {
     width: 327px;
     height: 200px;
     background-color: var(--color-seashell);
@@ -421,7 +427,7 @@ h2 {
     margin-top: -7px;
 }
 
-.yx1-earphones h4 {
+.feat-item__three h4 {
     padding: 41px 0 32px 24px;
 }
 
@@ -553,44 +559,4 @@ footer p {
 .icon-twitter:hover,
 .icon-instagram:hover {
     filter: brightness(0) saturate(100%) invert(65%) sepia(32%) saturate(1438%) hue-rotate(327deg) brightness(91%) contrast(85%);
-}
-
-/* ************************************************************************ 
-    HEADPHONES SUBPAGE STYLES
- ************************************************************************ */
-
- .mask {
-    background-color: var(--color-black);
-}
-
-.header {
-    position: absolute;
-    top: 90px;
-    height: 102px;
-    width: 100%;
-    background-color: var(--color-black);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header h4 {
-    color: var(--color-white);
-}
-
-/***************************************** 
-              PRODUCTS SECTION                 
-*****************************************/
-
-
-
-.product-preview img {
-    width: 327px;
-    height: 352px;
-    border-radius: var(--br-5xs);
-}
-
-.product-content p {
-    color: var(--color-black);
-    opacity: .5;
 }
