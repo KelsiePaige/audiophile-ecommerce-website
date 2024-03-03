@@ -1,0 +1,159 @@
+:root {
+    /* FONT */
+    --font-manrope: Manrope;
+
+    /* FONT SIZES */
+    --fs-h1: 56px;
+    /* H1 - Manrope Bold - 56px (All Caps, 58px Line Space, 2px Char. Space) */
+    --fs-h2: 40px;
+    /* H2 - Manrope Bold - 40px (All Caps, 44px Line Space, 1.5px Char. Space) */
+    --fs-h3: 32px;
+    /* H3 - Manrope Bold - 32px (All Caps, 36px Line Space, 1.15px Char. Space) */
+    --fs-h4: 28px;
+    /* H4 - Manrope Bold - 28px (All Caps, 38px Line Space, 2px Char. Space) */
+    --fs-h5: 24px;
+    /* H5 - Manrope Bold - 24px (All Caps, 33px Line Space, 1.7px Char. Space) */
+    --fs-h6: 18px;
+    /* H6 - Manrope Bold - 18px (All Caps, 24px Line Space, 1.3px Char. Space) */
+    --fs-body: 15px;
+    /* Body - Manrope Medium - 15px (25px Line Space) */
+    --fs-overline: 14px;
+    /* Overline - Manrope Regular - 14px (All Caps, 19px Line Space, 10px Char. Space) */
+    --fs-sub-title: 13px;
+    /* Sub Title - Manrope Bold - 13px (All Caps, 25px Line Space, 1px Char. Space) */
+
+    /* COLORS */
+    --color-raw-sienna: #D87D4A;
+    --color-hit-pink: #FBAF85;
+    --color-black: #000000;
+    --color-cod-gray: #101010;
+    --color-tundora: #4C4C4C;
+    --color-alto: #CFCFCF;
+    --color-white: #FFFFFF;
+    --color-seashell: #F1F1F1;
+    --color-alabaster: #FAFAFA;
+
+    /* BORDER RADIUS */
+    --br-5xs: 8px;
+}
+
+body {
+    background-color: var(--color-alabaster);
+}
+
+.content-wrapper {
+    background-color: var(--color-white);
+    width: 327px;
+    height: auto;
+    border-radius: var(--br-5xs);
+    border: 1px solid red;
+    padding: 24px;
+}
+
+.checkout {
+    position: relative;
+    top: 155px;
+    margin-bottom: 32px;
+    border: 1px solid;
+}
+
+.checkout h4 {
+    line-height: 38px;
+    margin-bottom: 32px;
+}
+
+form {
+    width: 280px;
+}
+
+legend {
+    margin-bottom: 16px;
+}
+
+fieldset {
+    border: none;
+    color: var(--color-raw-sienna);
+    font-size: var(--fs-sub-title);
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.93px;
+    margin-bottom: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 24px;
+    color: var(--color-black);
+    font-size: 12px;
+    text-transform: none;
+    letter-spacing: -0.21px;
+}
+
+input {
+    width: 280px;
+    border: 1px solid var(--color-alto);
+    padding: 18px 24px 19px;
+    margin-top: 9px;
+    border-radius: var(--br-5xs);
+}
+
+input::placeholder {
+    color: var(--color-black);
+    opacity: 0.4;
+    font-size: var(--fs-overline);
+    font-family: var(--font-manrope);
+    font-weight: 700;
+    letter-spacing: -0.25px;
+}
+
+label[for="payment-method"] {
+    margin-bottom: 16px;
+}
+
+.payment-method {
+    padding-bottom: 16px;
+}
+
+.payment-method li {
+    width: 280px;
+    height: 56px;
+    border: 1px solid var(--color-alto);
+    border-radius: var(--br-5xs);
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    margin-bottom: 16px;
+}
+
+input[type="radio"] {
+    margin-top: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+}
+
+label[for="e-money"],
+label[for="cash"] {
+    width: 280px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    font-size: var(--fs-overline);
+    letter-spacing: -0.25px;
+    transform: translateY(10px);
+}
+
+label[for="money-pin"] {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.cart-summary {
+    position: relative;
+    top: 155px;
+    margin-bottom: 97px;
+    border: 1px solid blue;
+}
+
