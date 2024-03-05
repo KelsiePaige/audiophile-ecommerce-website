@@ -46,7 +46,6 @@ body {
     width: 327px;
     height: auto;
     border-radius: var(--br-5xs);
-    border: 1px solid red;
     padding: 24px;
 }
 
@@ -54,7 +53,6 @@ body {
     position: relative;
     top: 155px;
     margin-bottom: 32px;
-    border: 1px solid;
 }
 
 .checkout h4 {
@@ -154,7 +152,6 @@ label[for="money-pin"] {
     position: relative;
     top: 155px;
     margin-bottom: 97px;
-    border: 1px solid blue;
 }
 
 .cart-summary h6 {
@@ -166,7 +163,6 @@ label[for="money-pin"] {
 .cart-list {
     display: flex;
     justify-content: space-between;
-    border: 1px solid;
     margin-bottom: 24px;
 }
 
@@ -209,7 +205,6 @@ label[for="money-pin"] {
 }
 
 .price-details {
-    border: 1px solid violet;
     margin-bottom: 32px;
 }
 
