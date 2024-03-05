@@ -142,7 +142,7 @@ label[for="cash"] {
     padding-left: 16px;
     font-size: var(--fs-overline);
     letter-spacing: -0.25px;
-    transform: translateY(10px);
+    transform: translateY(10.5px);
 }
 
 label[for="money-pin"] {
@@ -157,3 +157,128 @@ label[for="money-pin"] {
     border: 1px solid blue;
 }
 
+.cart-summary h6 {
+    font-size: var(--fs-h6);
+    letter-spacing: 1.29px;
+    margin-bottom: 30px;
+}
+
+.cart-list {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    margin-bottom: 24px;
+}
+
+.item-img {
+    width: 64px;
+    height: 64px;
+    border-radius: var(--br-5xs);
+}
+
+.item-img img {
+    width: 64px;
+    height: 64px;
+    border-radius: var(--br-5xs);
+}
+
+.item-info {
+    margin-left: -96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-title {
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.item-price {
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+.item-quantity {
+    display: flex;
+    height: 64px;
+    padding-top: 7px;
+    font-weight: 700;
+    line-height: 25px;
+    opacity: 0.5;
+}
+
+.price-details {
+    border: 1px solid violet;
+    margin-bottom: 32px;
+}
+
+.price-details p {
+    color: black;
+}
+
+.total,
+.shipping,
+.vat,
+.grand-total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total,
+.shipping,
+.vat {
+    margin-bottom: 8px;
+}
+
+.grand-total {
+    margin-top: 16px;
+}
+
+.total p,
+.shipping p,
+.vat p,
+.grand-total p {
+    text-transform: uppercase;
+    line-height: 25px;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.total .amount,
+.shipping .amount,
+.vat .amount,
+.grand-total .amount {
+    opacity: 1;
+}
+
+h6.amount {
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.grand-total h6 {
+    color: var(--color-raw-sienna);
+}
+
+input[type="submit"] {
+    border: none;
+    border-radius: 0;
+    background-color: var(--color-raw-sienna);
+    color: var(--color-white);
+    font-family: var(--font-manrope);
+    font-size: var(--fs-sub-title);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 15px 0;
+    margin: 0;
+    width: 278px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--color-hit-pink);
+}
