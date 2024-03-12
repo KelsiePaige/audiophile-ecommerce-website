@@ -9,11 +9,8 @@ footer {
     top: 192px;
 }
 
+header,
 .nav-divider {
-    background-color: black;
-}
-
-.mask {
     background-color: var(--color-black);
 }
 
