@@ -148,21 +148,30 @@ footer {
     top: 600px;
 }
 
+.content-wrapper {
+    margin: 0 24px;
+}
+
 /***************************************** 
                HEADER SECTION                 
 *****************************************/
-.head-menu {
-    position: absolute;
+header {
+    position: fixed;
+    background-color: #191919;
     top: 0;
-    z-index: 1;
+    z-index: 99;
+    height: 91px;
 }
 
-.mobile-menu {
+.mobile-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 32px 24px;
-    width: 327px;
+} 
+
+.nav-bar {
+    display: none;
 }
 
 .icon-hamburger {
@@ -171,6 +180,7 @@ footer {
     background-size: contain;
     width: 16px;
     height: 15px;
+    cursor: pointer;
 }
 
 .logo {
@@ -192,10 +202,27 @@ footer {
 .nav-divider {
     width: 375px;
     height: 1px;
-    background-color: #292929;
+    background-color: #979797;
+    opacity: 0.104;
 }
 
-.menu {
+/* MOBILE DROP DOWN MENU */
+
+.drop-down {
+    position: fixed;
+    z-index: 10;
+    height: 750px;
+    width: 375px;
+    background: var(--color-white);
+    border: 1px solid red;
+    border-radius: 0px 0px 8px 8px;
+} 
+
+.drop-down .content-wrapper {
+    margin-top: 32px; 
+}
+
+.hide {
     display: none;
 }
 
@@ -204,19 +231,22 @@ footer {
 *****************************************/
 .hero {
     width: 100%;
-    position: absolute;
+    position: relative;
     top: 0;
 }
 
 .hero-container {
-    background-image: url("../assets/home/mobile/image-header.jpg");
-    background-size: cover;
-    width: 100%;
+    background-color: #191919;
+}
+
+.hero-image img {
+    width: 375px;
     height: 600px;
+    opacity: 0.5;
 }
 
 .hero-content {
-    position: relative;
+    position: absolute;
     top: 198px;
     left: 24px;
     width: 328px;
@@ -242,13 +272,10 @@ footer {
             CATEGORY SECTION                 
 ******************************************/
 
-.content-wrapper {
-    width: 327px;
-    height: auto;
-}
-
-.categories .content-wrapper {
-    margin: 40px 24px 104px;
+.categories {
+    position: relative;
+    top: 40px;
+    margin-bottom: 120px;
 }
 
 .container {
@@ -259,13 +286,12 @@ footer {
 }
 
 .box {
+    position: relative;
+    top: -106px;
     width: 327px;
     height: 165px;
     background-color: var(--color-seashell);
     border-radius: var(--br-5xs);
-    position: relative;
-    top: 52px;
-    left: 0;
 }
 
 .box h6 {
@@ -276,8 +302,8 @@ footer {
 }
 
 .thumbnail {
-    position: absolute;
-    z-index: 3;
+    position: relative;
+    z-index: 1;
 }
 
 .thumbnail.headphones {
@@ -329,8 +355,10 @@ footer {
             FEATURE ITEMS SECTION                 
 *****************************************/
 
-.feature-items .content-wrapper {
-    margin: 0 24px 120px;
+.feature-items {
+    position: relative;
+    top: 40px;
+    margin-bottom: 120px;
 }
 
 .feat-item__one {
@@ -435,8 +463,10 @@ h2 {
                ABOUT SECTION                 
 *****************************************/
 
-.about .content-wrapper {
-    margin: 0 24px 120px;
+.about {
+    position: relative;
+    top: 40px;
+    margin-bottom: 120px;   
 }
 
 .about img {
@@ -472,6 +502,8 @@ footer {
     height: auto;
     background-color: var(--color-cod-gray);
     margin: 0 auto;
+    position: relative;
+    top: 40px;
 }
 
 .footer-divider {
