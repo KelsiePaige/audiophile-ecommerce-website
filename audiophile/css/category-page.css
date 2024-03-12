@@ -29,6 +29,10 @@ header,
     color: var(--color-white);
 }
 
+.content-wrapper {
+    margin: 0 24px;
+}
+
 /***************************************** 
             PRODUCTS SECTION                 
 *****************************************/
@@ -38,7 +42,7 @@ header,
 }
 
 .products .content-wrapper {
-    padding: 64px 24px 0;
+    padding-top: 64px;
 }
 
 .product-container {
