@@ -36,6 +36,10 @@
     --br-5xs: 8px;
 }
 
+header {
+    background-color: var(--color-black);
+}
+
 .content-wrapper {
     margin: 0 24px;
 }
