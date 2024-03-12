@@ -20,24 +20,68 @@
 
 <body>
   <header>
-    <nav class="head-menu mask">
-      <div class="menu">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../headphones/headphones.html">Headphones</a></li>
-          <li><a href="../speakers/speakers.html">Speakers</a></li>
-          <li><a href="../earphones/earphones.html">Earphones</a></li>
-        </ul>
-        <div class="icon-cart"></div>
-      </div>
-      <div class="mobile-menu">
-        <div class="icon-hamburger"></div>
-        <div class="logo"></div>
-        <div class="icon-cart"></div>
-      </div>
-      <div class="nav-divider"></div>
+    <nav class="nav-bar">
+      <ul class="nav-menu">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="../headphones/headphones.html">Headphones</a></li>
+        <li class="nav-item"><a class="nav-link" href="../speakers/speakers.html">Speakers</a></li>
+        <li class="nav-item"><a class="nav-link" href="../earphones/earphones.html">Earphones</a></li>
+      </ul>
+      <div class="logo"></div>
+      <div class="icon-cart"></div>
     </nav>
-
+    <div class="mobile-nav">
+      <div class="icon-hamburger"></div>
+      <div class="logo"></div>
+      <div class="icon-cart"></div>
+    </div>
+    <div class="mobile-menu">
+      <div class="drop-down">
+        <div class="content-wrapper">
+          <ul>
+            <li>
+              <div class="container">
+                <img class="thumbnail headphones" src="../assets/shared/desktop/image-category-thumbnail-headphones.png"
+                  alt="Headphones">
+                <div class="box">
+                  <h6>Headphones</h6>
+                  <div class="btn__three">
+                    <a class="shop" href="../headphones/headphones.html">Shop</a>
+                    <div class="icon-arrow-right"></div>
+                  </div>
+                </div>
+            </li>
+            <li>
+              <div class="container">
+                <img class="thumbnail speakers" src="../assets/shared/desktop/image-category-thumbnail-speakers.png"
+                  alt="Speakers">
+                <div class="box">
+                  <h6>Speakers</h6>
+                  <div class="btn__three">
+                    <a class="shop" href="../speakers/speakers.html">Shop</a>
+                    <div class="icon-arrow-right"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="container">
+                <img class="thumbnail earphones" src="../assets/shared/desktop/image-category-thumbnail-earphones.png"
+                  alt="Earphones">
+                <div class="box">
+                  <h6>Earphones</h6>
+                  <div class="btn__three">
+                    <a class="shop" href="../earphones/earphones.html">Shop</a>
+                    <div class="icon-arrow-right"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="nav-divider"></div>
   </header>
   <main>
     <div class="go-back"><a href="../speakers/speakers.html">Go Back</a></div>
@@ -226,7 +270,7 @@
     </div>
   </footer>
 
-  <script src="js/script.js" defer></script>
+  <script src="../js/script.js" defer></script>
 
 </body>
 
