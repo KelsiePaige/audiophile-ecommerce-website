@@ -225,6 +225,13 @@ header {
     display: none;
 }
 
+.overlay {
+    height: 100vh;
+    background-color: #000000;
+    position: relative;
+    opacity: 0.4;
+}
+
 /***************************************** 
                HERO SECTION                 
 *****************************************/
