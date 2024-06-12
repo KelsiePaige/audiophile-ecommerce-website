@@ -168,7 +168,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 32px 24px;
-} 
+}
 
 .nav-bar {
     display: none;
@@ -215,10 +215,11 @@ header {
     width: 375px;
     background: var(--color-white);
     border-radius: 0px 0px 8px 8px;
-} 
+    animation: fade-in 0.2s ease-in-out;
+}
 
 .drop-down .content-wrapper {
-    margin-top: 32px; 
+    margin-top: 32px;
 }
 
 .hide {
@@ -230,6 +231,16 @@ header {
     background-color: #000000;
     position: relative;
     opacity: 0.4;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /***************************************** 
@@ -472,7 +483,7 @@ h2 {
 .about {
     position: relative;
     top: 40px;
-    margin-bottom: 120px;   
+    margin-bottom: 120px;
 }
 
 .about img {
