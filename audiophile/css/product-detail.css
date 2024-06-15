@@ -126,6 +126,7 @@ p.overline.orange {
 .plus {
     opacity: 0.25;
     cursor: pointer;
+    border: none;
 }
 
 .btn__cart {
