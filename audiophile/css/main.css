@@ -79,7 +79,8 @@ h5 {
     letter-spacing: 0.86px;
 }
 
-h6 {
+h6,
+.cart {
     color: var(--color-black);
     font-size: var(--fs-body);
     line-height: normal;
@@ -92,7 +93,8 @@ h3,
 h4,
 h5,
 h6,
-a {
+a,
+.cart {
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -160,7 +162,7 @@ header {
     background-color: #191919;
     top: 0;
     z-index: 99;
-    height: 91px;
+    height: 90px;
 }
 
 .mobile-nav {
@@ -191,12 +193,14 @@ header {
     height: 25px;
 }
 
-.icon-cart {
+.icon-cart,
+.cart {
     background-image: url("../assets/shared/desktop/icon-cart.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 23px;
     height: 20px;
+    cursor: pointer;
 }
 
 .nav-divider {
@@ -222,15 +226,15 @@ header {
     margin-top: 32px;
 }
 
-.hide {
-    display: none;
-}
-
 .overlay {
     height: 100vh;
     background-color: #000000;
     position: relative;
     opacity: 0.4;
+}
+
+.hide {
+    display: none;
 }
 
 @keyframes fade-in {
