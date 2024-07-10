@@ -10,6 +10,7 @@
   <title>Frontend Mentor | Audiophile e-commerce website</title>
 
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/cart.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,9 +36,7 @@
       <a href="#">
         <div class="logo"></div>
       </a>
-      <a href="checkout/checkout.html">
-        <div class="icon-cart"></div>
-      </a>
+      <div class="cart"></div>
     </div>
     <div class="mobile-menu">
       <div class="drop-down">
@@ -45,7 +44,7 @@
           <ul>
             <li>
               <div class="container">
-                <img class="thumbnail headphones" src="./assets/shared/desktop/image-category-thumbnail-headphones.png"
+                <img class="thumbnail headphones" src="assets/shared/desktop/image-category-thumbnail-headphones.png"
                   alt="Headphones">
                 <div class="box">
                   <h6>Headphones</h6>
@@ -57,7 +56,7 @@
             </li>
             <li>
               <div class="container">
-                <img class="thumbnail speakers" src="./assets/shared/desktop/image-category-thumbnail-speakers.png"
+                <img class="thumbnail speakers" src="assets/shared/desktop/image-category-thumbnail-speakers.png"
                   alt="Speakers">
                 <div class="box">
                   <h6>Speakers</h6>
@@ -70,7 +69,7 @@
             </li>
             <li>
               <div class="container">
-                <img class="thumbnail earphones" src="./assets/shared/desktop/image-category-thumbnail-earphones.png"
+                <img class="thumbnail earphones" src="assets/shared/desktop/image-category-thumbnail-earphones.png"
                   alt="Earphones">
                 <div class="box">
                   <h6>Earphones</h6>
@@ -87,12 +86,34 @@
       <div class="overlay"></div>
     </div>
     <div class="nav-divider"></div>
+    <!-- <div class="modal-cart">
+      <div class="content-wrapper">
+        <div class="container-cart">
+          <div class="head-cart">
+            <h6>Cart (<span class="cart">0</span>)</h6>
+            <div class="remove-all">Remove all</div>
+          </div>
+          <div class="cart-items">
+             <div class="item-info"></div>
+            <div class="btn btn__counter">
+              <button class="minus">-</button>
+              <div class="num"></div>
+              <button class="plus">+</button>
+            </div>
+             <div class="totals"></div>
+            <a href="checkout/checkout.html"><button class="btn btn__one checkout">Checkout</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div> -->
+    </div>
+
   </header>
   <main>
     <section class="hero">
       <div class="hero-container">
         <div class="hero-image">
-          <img src="../assets/home/mobile/image-header.jpg" alt="XX99 Mark II Headphones with dark background">
+          <img src="assets/home/mobile/image-header.jpg" alt="XX99 Mark II Headphones with dark background">
         </div>
         <div class="hero-content">
           <span class="overline">New product</span>
@@ -109,7 +130,7 @@
     <section class="categories">
       <div class="content-wrapper">
         <div class="container">
-          <img class="thumbnail headphones" src="./assets/shared/desktop/image-category-thumbnail-headphones.png"
+          <img class="thumbnail headphones" src="assets/shared/desktop/image-category-thumbnail-headphones.png"
             alt="Headphones">
           <div class="box">
             <h6>Headphones</h6>
@@ -120,7 +141,7 @@
           </div>
         </div>
         <div class="container">
-          <img class="thumbnail speakers" src="./assets/shared/desktop/image-category-thumbnail-speakers.png"
+          <img class="thumbnail speakers" src="assets/shared/desktop/image-category-thumbnail-speakers.png"
             alt="Speakers">
           <div class="box">
             <h6>Speakers</h6>
@@ -131,7 +152,7 @@
           </div>
         </div>
         <div class="container">
-          <img class="thumbnail earphones" src="./assets/shared/desktop/image-category-thumbnail-earphones.png"
+          <img class="thumbnail earphones" src="assets/shared/desktop/image-category-thumbnail-earphones.png"
             alt="Earphones">
           <div class="box">
             <h6>Earphones</h6>
@@ -146,7 +167,7 @@
     <section class="feature-items">
       <div class="content-wrapper">
         <div class="feat-item__one">
-          <img src="./assets/home/mobile/image-speaker-zx9.png" alt="ZX9 Speaker">
+          <img src="assets/home/mobile/image-speaker-zx9.png" alt="ZX9 Speaker">
           <h2>ZX9 Speaker</h2>
           <p>Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
           <div class="btn btn__two">
@@ -172,7 +193,7 @@
     </section>
     <section class="about">
       <div class="content-wrapper">
-        <img src="./assets/shared/mobile/image-best-gear.jpg" alt="Man wearing headphones">
+        <img src="assets/shared/mobile/image-best-gear.jpg" alt="Man wearing headphones">
         <h4>Bringing you the <span>best</span> audio gear</h4>
         <p>Located at the heart of New York City, Audiophile is the premier store for high end headphones,
           earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration
@@ -206,7 +227,10 @@
     </div>
   </footer>
 
-  <script src="js/script.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/product-detail.js" defer></script>
+  <script src="js/cart.js" defer></script>
+
 </body>
 
 </html>
