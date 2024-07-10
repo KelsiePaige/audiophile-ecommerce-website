@@ -1,3 +1,42 @@
+:root {
+    /* FONT */
+    --font-manrope: Manrope;
+
+    /* FONT SIZES */
+    --fs-h1: 56px;
+    /* H1 - Manrope Bold - 56px (All Caps, 58px Line Space, 2px Char. Space) */
+    --fs-h2: 40px;
+    /* H2 - Manrope Bold - 40px (All Caps, 44px Line Space, 1.5px Char. Space) */
+    --fs-h3: 32px;
+    /* H3 - Manrope Bold - 32px (All Caps, 36px Line Space, 1.15px Char. Space) */
+    --fs-h4: 28px;
+    /* H4 - Manrope Bold - 28px (All Caps, 38px Line Space, 2px Char. Space) */
+    --fs-h5: 24px;
+    /* H5 - Manrope Bold - 24px (All Caps, 33px Line Space, 1.7px Char. Space) */
+    --fs-h6: 18px;
+    /* H6 - Manrope Bold - 18px (All Caps, 24px Line Space, 1.3px Char. Space) */
+    --fs-body: 15px;
+    /* Body - Manrope Medium - 15px (25px Line Space) */
+    --fs-overline: 14px;
+    /* Overline - Manrope Regular - 14px (All Caps, 19px Line Space, 10px Char. Space) */
+    --fs-sub-title: 13px;
+    /* Sub Title - Manrope Bold - 13px (All Caps, 25px Line Space, 1px Char. Space) */
+
+    /* COLORS */
+    --color-raw-sienna: #D87D4A;
+    --color-hit-pink: #FBAF85;
+    --color-black: #000000;
+    --color-cod-gray: #101010;
+    --color-tundora: #4C4C4C;
+    --color-alto: #CFCFCF;
+    --color-white: #FFFFFF;
+    --color-seashell: #F1F1F1;
+    --color-alabaster: #FAFAFA;
+
+    /* BORDER RADIUS */
+    --br-5xs: 8px;
+}
+
 /* ************************************************************************ 
     CATEGORY PAGE STYLES
  ************************************************************************ */
