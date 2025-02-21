@@ -159,8 +159,9 @@ p.overline.orange {
     cursor: default;
 }
 
-.buttons .btn__cart {
+.btn__cart:hover {
     cursor: pointer;
+    background-color: var(--color-hit-pink);
 }
 
 .features {
