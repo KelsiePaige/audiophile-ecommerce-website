@@ -55,17 +55,23 @@ header {
     margin-bottom: 40px;
 }
 
-.go-back a {
+.go-back {
     color: var(--color-black);
     opacity: 0.5;
     position: absolute;
     top: 106px;
     left: 24px;
-    line-height: 2.5;
+    line-height: 25px;
     text-transform: none;
-    font-size: 15px;
+    font-size: var(--fs-body);
     font-weight: 500;
-    letter-spacing: normal;
+    letter-spacing: none;
+}
+
+.go-back:hover {
+    cursor: pointer;
+    color: var(--color-raw-sienna);
+    opacity: 1;
 }
 
 .product {
