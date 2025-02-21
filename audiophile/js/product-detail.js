@@ -25,15 +25,6 @@ addButton.addEventListener('click', () => {
 
 displayNum.innerHTML = count;
 
-/* 
-
-TODO: 
-- Add updated count to cart when 'ADD TO CART' button is clicked
-- Display count on shopping cart icon
-- Add functionality to 'Go Back' button; must go back to user's previous page
-
-*/
-
 backButton.addEventListener("click", () => {
     history.back();
 });
