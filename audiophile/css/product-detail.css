@@ -140,6 +140,12 @@ p.overline.orange {
     border: none;
 }
 
+ .minus:hover,
+ .plus:hover {
+    color: var(--color-raw-sienna);
+    opacity: 1;
+}
+
 .btn__cart {
     width: 160px;
     height: 48px;
