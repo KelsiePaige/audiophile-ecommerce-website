@@ -79,13 +79,19 @@ h5 {
     letter-spacing: 0.86px;
 }
 
-h6,
-.cart {
+h6 {
     color: var(--color-black);
     font-size: var(--fs-body);
     line-height: normal;
     letter-spacing: 1.07px;
 }
+
+/* .cart {
+    color: var(--color-black);
+    font-size: var(--fs-body);
+    line-height: normal;
+    letter-spacing: 1.07px;
+} */
 
 h1,
 h2,
@@ -94,11 +100,15 @@ h4,
 h5,
 h6,
 a,
-.cart {
+.item-count {
     font-weight: 700;
     text-transform: uppercase;
 }
 
+/* .cart {
+    font-weight: 700;
+    text-transform: uppercase;
+} */
 
 p {
     font-weight: 500;
@@ -193,7 +203,21 @@ header {
     height: 25px;
 }
 
-.icon-cart,
+/* .icon-cart {
+    background-image: url("../assets/shared/desktop/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 23px;
+    height: 20px;
+    cursor: pointer;
+    background-color: #191919;
+    border: none;
+} */
+
+.shopping-cart {
+    display: flex;
+}
+
 .cart {
     background-image: url("../assets/shared/desktop/icon-cart.svg");
     background-repeat: no-repeat;
@@ -201,6 +225,8 @@ header {
     width: 23px;
     height: 20px;
     cursor: pointer;
+    background-color: #191919;
+    border: none;
 }
 
 .nav-divider {
@@ -245,6 +271,175 @@ header {
     100% {
         opacity: 1;
     }
+}
+
+/* SHOPPING CART MODAL */
+
+.modal {
+    border: 1px solid red;
+    position: fixed;
+    z-index: 10;
+    height: auto;
+    width: 375px;
+    animation: fade-in 0.2s ease-in-out;
+}
+
+.modal-cart .content-wrapper {
+    margin-top: 24px;
+}
+
+.container-cart {
+    background-color: var(--color-white);
+    border-radius: 8px;
+    padding: 32px 28px;
+    height: 488px;
+}
+
+.cart-header {
+    border: 1px solid yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    width: 271px;
+}
+
+.cart-header h6,
+span.item-count {
+    color: var(--color-black);
+    font-size: var(--fs-h6);
+    line-height: normal;
+    letter-spacing: 1.29px;
+    font-weight: 700;
+}
+
+.item-count {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.remove-all {
+    opacity: 0.5;
+    text-decoration: underline var(--color-tundora);
+    line-height: 25px;
+    font-weight: 500;
+    font-size: var(--fs-body);
+}
+
+.items::-webkit-scrollbar {
+    display: none;
+}
+
+.items {
+    height: 288px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1px solid red;
+}
+
+.cart-item {
+    width: 271px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+.item-img {
+    width: 64px;
+    height: 64px;
+    margin-right: 16px;
+    border: 1px solid purple;
+}
+
+.item-info {
+    border: 1px solid purple;
+}
+
+.item-name {
+    line-height: 25px;
+    font-weight: 700;
+    font-size: var(--fs-body);
+    color: var(--color-black);
+}
+
+.item-price {
+    line-height: 25px;
+    font-weight: 700;
+    font-size: var(--fs-overline);
+    color: var(--color-black);
+    opacity: 0.5;
+}
+
+.btn__counter {
+    display: flex;
+    justify-content: space-between;
+    width: 96px;
+    height: 32px;
+    background-color: var(--color-seashell);
+    padding: 7px 12px;
+}
+
+.minus,
+.num,
+.plus {
+    font-size: var(--fs-sub-title);
+    font-weight: 700;
+}
+
+.minus,
+.plus {
+    opacity: 0.25;
+    cursor: pointer;
+    border: none;
+}
+
+.minus:hover,
+.plus:hover {
+    color: var(--color-raw-sienna);
+    opacity: 1;
+}
+
+.total-amount {
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4px;
+    margin-bottom: 24px;
+    width: 271px;
+}
+
+.total {
+    color: var(--color-black);
+    text-transform: uppercase;
+    opacity: 0.5;
+    line-height: 25px;
+    font-weight: 500;
+    font-size: var(--fs-body);
+}
+
+.amount {
+    color: var(--color-black);
+    font-weight: 700;
+    font-size: var(--fs-h6);
+}
+
+.btn.btn__one.checkout {
+    width: 271px;
+    /* margin-bottom: 31px; */
+}
+
+.modal-overlay {
+    height: 100vh;
+    background-color: #000000;
+    opacity: 0.4;
+    position: relative;
 }
 
 /***************************************** 

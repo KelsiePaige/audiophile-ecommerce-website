@@ -1,3 +1,16 @@
+const products = async function () {
+    const requestURL = '../data.json';
+    const request = new Request(requestURL);
+
+    const response = await fetch(request);
+    const productText = await response.text();
+
+    const product = JSON.parse(productText);
+}
+products();
+
+/***** Menu Button *****/
+
 const menuButton = document.querySelector('.icon-hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
 
@@ -6,13 +19,27 @@ mobileMenu.classList.add('hide');
 
 // Toggles mobile menu
 const navMenu = function () {
-    menuButton.addEventListener("click", () => {
+    menuButton.addEventListener('click', () => {
         mobileMenu.classList.toggle('hide');
     });
 };
 navMenu();
 
-// Product details js page
+/***** Cart Modal *****/
+
+const cartButton = document.querySelector('.cart');
+const cartModal = document.querySelector('.modal-cart');
+
+cartModal.classList.add('hide');
+
+function openModal() {
+    cartButton.addEventListener('click', () => {
+        cartModal.classList.toggle('hide');
+    });
+};
+openModal();
+
+/***** Product details js page *****/
 
 const subButton = document.querySelector('.minus');
 const addButton = document.querySelector('.plus');
@@ -41,26 +68,6 @@ addButton.addEventListener('click', () => {
 
 displayNum.innerHTML = count;
 
-backButton.addEventListener("click", () => {
+backButton.addEventListener('click', () => {
     history.back();
 });
-
-// Shopping cart js page
-
-const cartButton = document.querySelector('.cart');
-const modal = document.querySelector('.modal-cart');
-
-// Hides cart modal
-// modal.classList.add('hide');
-
-// Toggles cart modal
-// const cartModal = function () {
-//     cartButton.addEventListener("click", () => {
-//         modal.classList.toggle('hide');
-//     });
-// };
-// cartModal();
-
-/*
-    Fix overlay to display behind cart modal not just beneath it
-*/

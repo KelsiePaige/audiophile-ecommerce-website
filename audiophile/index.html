@@ -31,13 +31,17 @@
       </a>
       <div class="icon-cart"></div>
     </nav>
+
     <div class="mobile-nav">
       <div class="icon-hamburger"></div>
       <a href="#">
         <div class="logo"></div>
       </a>
-      <div class="cart"></div>
+      <div class="shopping-cart">
+        <button class="cart"></button>
+      </div>
     </div>
+
     <div class="mobile-menu">
       <div class="drop-down">
         <div class="content-wrapper">
@@ -85,29 +89,43 @@
       </div>
       <div class="overlay"></div>
     </div>
-    <div class="nav-divider"></div>
-    <!-- <div class="modal-cart">
-      <div class="content-wrapper">
-        <div class="container-cart">
-          <div class="head-cart">
-            <h6>Cart (<span class="cart">0</span>)</h6>
-            <div class="remove-all">Remove all</div>
-          </div>
-          <div class="cart-items">
-             <div class="item-info"></div>
-            <div class="btn btn__counter">
-              <button class="minus">-</button>
-              <div class="num"></div>
-              <button class="plus">+</button>
+
+    <div class="modal-cart">
+      <div class="modal">
+        <div class="content-wrapper">
+          <div class="container-cart">
+            <div class="cart-header">
+              <h6>Cart (<span class="item-count">0</span>)</h6>
+              <div class="remove-all">Remove all</div>
             </div>
-             <div class="totals"></div>
-            <a href="checkout/checkout.html"><button class="btn btn__one checkout">Checkout</button></a>
+            <div class="items">
+              <div class="cart-item">
+                <div class="item">
+                  <div class="item-img"></div>
+                  <div class="item-info">
+                    <p class="item-name">XX99 MK II</p>
+                    <p class="item-price">$ 2,999</p>
+                  </div>
+                </div>
+                <div class="btn btn__counter">
+                  <button class="minus">-</button>
+                  <div class="num">1</div>
+                  <button class="plus">+</button>
+                </div>
+              </div>
+            </div>
+            <div class="total-amount">
+              <p class="total">Total</p>
+              <p class="amount">$ 0,000</p>
+            </div>
+            <div class="btn btn__one checkout"><a class="checkout" href="checkout/checkout.html">Checkout</a></div>
           </div>
         </div>
       </div>
-      <div class="overlay"></div> -->
+      <div class="modal-overlay"></div>
     </div>
 
+    <div class="nav-divider"></div>
   </header>
   <main>
     <section class="hero">
